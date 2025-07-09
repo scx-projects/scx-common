@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.Optional;
 
 /// 处理对象的工具类
-/// 
+///
 /// 如需高级功能 请使用 scx-object 模块
 ///
 /// @author scx567888

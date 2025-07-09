@@ -19,5 +19,5 @@ public final class NetUtils {
     public static InetAddress[] getLocalIPAddress() throws SocketException {
         return getLocalIPAddress(c -> true);
     }
-    
+
 }
