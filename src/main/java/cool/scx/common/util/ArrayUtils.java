@@ -2,7 +2,8 @@ package cool.scx.common.util;
 
 import java.lang.reflect.Array;
 import java.util.*;
-import java.util.concurrent.ThreadLocalRandom;
+
+import static cool.scx.common.util.RandomUtils.randomInt;
 
 /// ArrayUtils
 ///
@@ -208,10 +209,6 @@ public final class ArrayUtils {
 
 
     //************* shuffle START ***************
-
-    private static int randomInt(int bound) {
-        return ThreadLocalRandom.current().nextInt(bound);
-    }
 
     public static void shuffle(byte... arr) {
         for (var i = arr.length; i > 1; i = i - 1) {
