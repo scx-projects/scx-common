@@ -1,7 +1,5 @@
 package cool.scx.common.util;
 
-import cool.scx.collections.ArrayUtils;
-
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 

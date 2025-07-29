@@ -75,12 +75,6 @@
             <version>${scx-functional.version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>cool.scx</groupId>
-            <artifactId>scx-collections</artifactId>
-            <version>${scx-collections.version}</version>
-        </dependency>
-
         <!-- TestNG 测试包 -->
         <dependency>
             <groupId>org.testng</groupId>
