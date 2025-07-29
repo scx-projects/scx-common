@@ -12,7 +12,7 @@
 
     <artifactId>scx-common</artifactId>
     <packaging>jar</packaging>
-    <version>4.0.1</version>
+    <version>4.0.2</version>
 
     <name>SCX Common</name>
     <url>https://github.com/scx-projects/scx-common</url>
