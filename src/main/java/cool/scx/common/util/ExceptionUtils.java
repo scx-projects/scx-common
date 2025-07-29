@@ -1,7 +1,8 @@
 package cool.scx.common.util;
 
-import cool.scx.functional.ScxCallable;
-import cool.scx.functional.ScxRunnable;
+
+import cool.scx.function.CallableX;
+import cool.scx.function.RunnableX;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
@@ -13,7 +14,7 @@ import java.io.StringWriter;
 public final class ExceptionUtils {
 
     /// 忽略异常 发生异常时返回 null
-    public static <T> T ignore(ScxCallable<T, ?> handler) {
+    public static <T> T ignore(CallableX<T, ?> handler) {
         try {
             return handler.call();
         } catch (Throwable throwable) {
@@ -22,7 +23,7 @@ public final class ExceptionUtils {
     }
 
     /// 忽略异常 发生异常时返回默认值
-    public static <T> T ignore(ScxCallable<T, ?> handler, T defaultVal) {
+    public static <T> T ignore(CallableX<T, ?> handler, T defaultVal) {
         try {
             return handler.call();
         } catch (Throwable throwable) {
@@ -31,7 +32,7 @@ public final class ExceptionUtils {
     }
 
     /// 忽略异常
-    public static void ignore(ScxRunnable<?> handler) {
+    public static void ignore(RunnableX<?> handler) {
         try {
             handler.run();
         } catch (Throwable ignored) {
@@ -40,7 +41,7 @@ public final class ExceptionUtils {
     }
 
     /// 检测执行的操作是否有异常 (有异常时不打印信息)
-    public static boolean noException(ScxRunnable<?> scxRunnable) {
+    public static boolean noException(RunnableX<?> scxRunnable) {
         try {
             scxRunnable.run();
             return true;

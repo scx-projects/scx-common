@@ -1,6 +1,6 @@
 package cool.scx.common.test;
 
-import cool.scx.collections.ArrayUtils;
+import cool.scx.common.util.ArrayUtils;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.concurrent.ThreadLocalRandom;
 
-import static cool.scx.collections.ArrayUtils.*;
+import static cool.scx.common.util.ArrayUtils.*;
 
 public class ArrayUtilsTest {
 
