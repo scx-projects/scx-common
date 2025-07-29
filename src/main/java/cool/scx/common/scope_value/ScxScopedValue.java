@@ -1,7 +1,7 @@
 package cool.scx.common.scope_value;
 
-import cool.scx.functional.ScxCallable;
-import cool.scx.functional.ScxRunnable;
+import cool.scx.function.CallableX;
+import cool.scx.function.RunnableX;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -78,7 +78,7 @@ public final class ScxScopedValue<T> {
             return new Carrier(key, value, this);
         }
 
-        public <E extends Throwable> void run(ScxRunnable<E> op) throws E {
+        public <X extends Throwable> void run(RunnableX<X> op) throws X {
             var oldValues = new ArrayList<>();
             bindAll(oldValues);
             try {
@@ -88,7 +88,7 @@ public final class ScxScopedValue<T> {
             }
         }
 
-        public <R, E extends Throwable> R call(ScxCallable<? extends R, E> op) throws E {
+        public <R, X extends Throwable> R call(CallableX<? extends R, X> op) throws X {
             var oldValues = new ArrayList<>();
             bindAll(oldValues);
             try {
