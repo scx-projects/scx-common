@@ -1,5 +1,6 @@
-# SCX Common
-
+<p align="center">
+    <img src="https://scx.cool/scx-logo/scx-common-logo.svg" width="300px" alt="scx-common-logo"/>
+</p>
 <p align="center">
     <a target="_blank" href="https://github.com/scx-projects/scx-common/actions/workflows/ci.yml">
         <img src="https://github.com/scx-projects/scx-common/actions/workflows/ci.yml/badge.svg" alt="CI"/>
