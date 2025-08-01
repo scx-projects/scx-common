@@ -64,7 +64,7 @@ public final class IOUtils {
 
             var buffer = new byte[8192];
             while (length > 0) {
-                int i = in.read(buffer);
+                int i = in.read(buffer, 0, (int) Math.min(buffer.length, length));
                 if (i == -1) {
                     break;
                 }
