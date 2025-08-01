@@ -12,14 +12,6 @@ import java.nio.file.Path;
 /// @version 0.0.1
 public final class IOUtils {
 
-    public static long getFileSize(Path path) {
-        try {
-            return Files.size(path);
-        } catch (IOException e) {
-            throw new UncheckedIOException(e);
-        }
-    }
-
     public static byte[] trimBytes(byte[] bytes, int offset, int length) {
         if (offset == 0 && length == bytes.length) {
             return bytes;
